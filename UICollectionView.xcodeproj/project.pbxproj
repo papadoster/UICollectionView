@@ -15,6 +15,7 @@
 		7F48B25A296F30110095AF21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F48B258296F30110095AF21 /* LaunchScreen.storyboard */; };
 		7F48B262296F31770095AF21 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48B261296F31770095AF21 /* MenuCollectionViewCell.swift */; };
 		7F48B266296F32AC0095AF21 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48B265296F32AC0095AF21 /* Menu.swift */; };
+		7F48B269296F540D0095AF21 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F48B268296F540D0095AF21 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		7F48B25B296F30110095AF21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F48B261296F31770095AF21 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		7F48B265296F32AC0095AF21 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		7F48B268296F540D0095AF21 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				7F48B251296F30100095AF21 /* ViewController.swift */,
+				7F48B268296F540D0095AF21 /* DetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 				7F48B252296F30100095AF21 /* ViewController.swift in Sources */,
 				7F48B24E296F30100095AF21 /* AppDelegate.swift in Sources */,
 				7F48B250296F30100095AF21 /* SceneDelegate.swift in Sources */,
+				7F48B269296F540D0095AF21 /* DetailViewController.swift in Sources */,
 				7F48B262296F31770095AF21 /* MenuCollectionViewCell.swift in Sources */,
 				7F48B266296F32AC0095AF21 /* Menu.swift in Sources */,
 			);

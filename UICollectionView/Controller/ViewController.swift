@@ -15,7 +15,12 @@ class ViewController: UIViewController {
         var blankMenu = Menu()
         blankMenu.name = "Coca-Cola"
         blankMenu.imageName = "cola"
-        return [blankMenu]
+        
+        var blankMenu2 = Menu()
+        blankMenu2.name = "Fanta"
+        blankMenu2.imageName = "fanta"
+        
+        return [blankMenu, blankMenu2]
     }()
     
     override func viewDidLoad() {
@@ -24,6 +29,18 @@ class ViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         
+    }
+    
+    // segue preparing data
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showVC" {
+            if let vc = segue.destination as? DetailViewController {
+                let menu = sender as? Menu
+                print(menu ?? "nil")
+                vc.menu = menu
+            }
+        }
     }
 
 
@@ -44,8 +61,11 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         return UICollectionViewCell()
     }
     
-   
-    
+   // выбранную ячейку отправляем в сигвей
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let menu = itemMenuArray[indexPath.row]
+        self.performSegue(withIdentifier: "showVC", sender: menu)
+    }
     
     
 }
